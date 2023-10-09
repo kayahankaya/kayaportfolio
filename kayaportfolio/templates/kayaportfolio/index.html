@@ -1,0 +1,742 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+  <!-- Turf.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Turf.js/6.5.0/turf.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@turf/turf@latest"></script>
+  <!-- MapJS -->
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js'></script>
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css' rel='stylesheet' />
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Lightbox JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+  <script>
+    // Galeri grup kimliğini belirle
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true,
+      'albumLabel': "Resim %1 / %2",
+      'disableScrolling': true,
+      'positionFromTop': 100,
+      'alwaysShowNavOnTouchDevices': true,
+      'fadeDuration': 300,
+      'imageFadeDuration': 300,
+      'disableScrolling': true,
+      'fitImagesInViewport': true,
+      'albumLabel': "Resim %1 / %2",
+      'positionFromTop': 100,
+      'showImageNumberLabel': false,
+      'wrapAround': true
+    })
+
+      < script >
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+      });
+  </script>
+
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <!-- <button type="button" class="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> -->
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex flex-column justify-content-center">
+
+    <!-- .nav-menu -->
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+        <li><a href="#education" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Educatuion</span></a>
+        </li>
+        <li><a href="#professional" class="nav-link scrollto"><i class="bx bx-file-blank"></i>
+            <span>Professional</span></a></li>
+        <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a>
+        </li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+      </ul>
+    </nav>
+    <!-- .nav-menu -->
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center hero-section">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Kayahan Kaya</h1>
+      <p>I'm <span class="typed" data-typed-items="an Engineer,a Developer,a Traveler"></span></p>
+      <div class="social-links">
+        <a href="#" class="github"><i class="bx bxl-github"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <section id="about" class="about d-flex flex-column justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>About</h2>
+      </div>
+
+      <div class="col-lg-12">
+        Hi,<br><br>I am Kaya. I am a Developer and Mechanical Engineer with 6+ years of process engineering
+        and technical project experience in multiple engineering disciplines,
+        mainly in the Automotive Industry.<br><br>In addition to this, I also work as a Freelance Developer.
+      </div>
+
+    </div>
+    <div class="mt-5 button-container">
+      <button href="" class="download-button">
+        Download Resume
+      </button>
+    </div>
+  </section>
+
+  <!-- ======= Skills Section ======= -->
+  <section id="skills" class="skills d-flex flex-column justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+
+      <div class="row skills-content">
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Python <i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">SQL <i class="val">60%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">HTML <i class="val">45%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">CSS <i class="val">40%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">JavaScript <i class="val">40%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-lg-6">
+
+          <div class="progress">
+            <span class="skill">Catia V5 <i class="val">90%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">AutoForm<i class="val">85%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">Solidworks <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">AutoCAD 2D/3D <i class="val">70%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+          <div class="progress">
+            <span class="skill">TeamCenter <i class="val">65%</i></span>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Skills Section -->
+
+  <!-- ======= Resume 2 Section ======= -->
+  <section id="education" class="education">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Education</h2>
+      </div>
+
+      <!-- C -->
+      <div class="mt-3 education-info d-flex flex-row">
+        <div class="row align-items-center">
+
+          <div class="col-4">
+            <div class="text-center"> 
+              <img src="{% static 'assets/img/csistem.jpg' %}" alt="" class="img-fluid" style="max-width: 60%;">
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="row">
+              <div class="col-12">
+                <b>C & System Programmers Association</b>
+                <br>
+                <h6>PYTHON PROGRAMMING LANGUAGE + SQL</h6>
+              </div>
+              <div class="mt-3 col-6">
+                <i>2022 - 2023</i>
+                <br>
+                <em>Istanbul, Turkey</em>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mt-3 col-12">
+                During my participation in the "C and System Programmers Association" program, I gained knowledge and skills in Python programming language. I successfully completed the courses focused on Python language and programming concepts. This program provided me with a strong foundation in Python and enhanced my understanding of programming principles.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- End C -->
+
+
+      <!-- Yildiz Technical University -->
+      <div class="mt-5 education-info d-flex flex-row">
+        <div class="row align-items-center">
+
+          <div class="col-4">
+            <div class="text-center">
+              <img src="{% static 'assets/img/ytu.jpg' %}" alt="" class="img-fluid" style="max-width: 70%;">
+            </div>
+          </div>
+
+          <div class="col-8">
+            <div class="row">
+              <div class="col-12">
+                <b>Yildiz Technical University</b>
+                <br>
+                <h6>BACHELOR'S DEGREE - MECHANICAL ENGINEER</h6>
+              </div>
+              <div class="mt-3 col-6">
+                <i>2009 - 2015</i>
+                <br>
+                <em>Istanbul, Turkey</em>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mt-3 col-12">
+                I completed my undergraduate studies at Yildiz Technical University, where I obtained a Bachelor's Degree in Mechanical Engineering. Throughout my time at the university, I gained a comprehensive understanding of mechanical engineering principles and their applications. Yildiz Technical University provided me with a strong academic foundation and valuable hands-on experiences, preparing me for a successful career in the field of mechanical engineering.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Yildiz Technical University -->
+
+      <!-- Bornova Anadolu Lisesi  -->
+      <div class="mt-5 education-info d-flex flex-row">
+        <div class="row align-items-center">
+
+          <div class="col-4"> 
+            <div class="text-center">
+              <img src="{% static 'assets/img/bal.jpg' %}" alt="" class="img-fluid" style="max-width: 60%;">
+            </div>
+            
+          </div>
+
+          <div class="col-8"> <!-- Bilgiler -->
+            <div class="row">
+              <div class="col-12">
+                <b>Bornova Anadolu Lisesi</b>
+                <br>
+                <h6>HIGH SCHOOL - MATHEMATICS AND SCIENCE</h6>
+              </div>
+              <div class="mt-3 col-6">
+                <i>2005 - 2009</i>
+                <br>
+                <em>Izmir, Turkey</em>
+              </div>
+            </div>
+            <div class="row">
+              <div class="mt-3 col-12">
+                While attending Bornova Anadolu High School for my high school education, I focused on a curriculum centered around Mathematics and Science. I specialized in the numerical field, which included subjects such as mathematics, physics, and chemistry. The education was conducted in English, allowing me to develop strong language skills alongside my scientific knowledge.
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <!-- End Bornova Anadolu Lisesi -->
+
+    </div>
+  </section>
+  <!-- End Resume Section -->
+
+  <!-- ======= Resume 2 Section ======= -->
+  <section id="professional" class="professional">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Professional</h2>
+      </div>
+
+      <!-- Ford Motor Company -->
+      <div class="mt-5 education-info d-flex flex-row">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-12">
+
+            <div class="row align-items-center">
+              <div class="col-6 text-center"> <!-- Logo -->
+                <img src="{% static 'assets/img/ford--img.jpg' %}" alt="" class="company-img img-fluid ">
+              </div>
+              <div class="col-6 position-info">
+                <div>
+                  <b>Ford Motor Company</b>
+                  <p>Feasibility & Process Engineer</p>
+                </div>
+                <div>
+                  <i>2019 - 2022</i>
+                  <p><em>Kocaeli, Turkey</em></p>
+                </div>
+              </div>
+            </div> 
+
+            <div class="row">
+              <div class="mt-5">
+                <ul class="professional-description">
+                  <li>Completed 3 Main Commercial Vehicle Projects as V713, V710, and V763 Programs. Main Feasibility Scope:
+                    Core
+                    Panels (Front Door Outer, Front Door Inner, Roofs, Hood Outer/Inner, etc. Panels.) (15 panels/process
+                    which
+                    includes 55 dies/operations)</li>
+                  <li>Providing Stamping Feasibility feedback and proposing applicable solutions to Design Studio and Product
+                    Development Teams by using CATIA and AUTOFORM Software for Ford Otosan, Ford of Europe, and Ford North
+                    America
+                    in new vehicle projects.</li>
+                  <li>Checking Part Design according to Process Driven Product Design (PDPD) gives quick feedback to the
+                    Product
+                    Design Team at the beginning of the feasibility phase. (Created 'Roof Panels PDPD' for internal know-how
+                    database)</li>
+                  <li>Creating process concept, deciding process parameters for each part which is appropriate to Main and
+                    Alternative Press Lines according to Global Press Book and agreeing on created process concept with all
+                    relevant teams (Die Design Die Manuf. Press Shop Teams) by completing Set meetings for each panel.</li>
+                  <li>Generating cost reduction ideas "Die number optimization" and "Material Utilization Percentage".
+                    Providing
+                    subject matter expertise and supporting tooling suppliers. (saved 1 die cost and also 7€ for each vehicle
+                    for
+                    Front Door Inner part of V763 vehicle project and 1-5€ for each part of roof panels in V710 project)</li>
+                  <li>Leading the Stamping Feasibility Period of the new vehicle project by creating collaborative teamwork
+                    between the Product Development, Design Studio, and Die Process Teams.</li>
+                  <li>Defining design-based problems and proposing solutions that apply to vehicle design. (600+ design-based
+                    problems solved based on FCR's report)</li>
+                </ul>
+            </div>
+            </div>
+            
+
+          </div>
+
+        </div>
+      </div>
+      <!-- End Ford Motor Company -->
+
+      <!-- Vaillant Group -->
+      <div class="mt-5 education-info d-flex flex-row">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-12">
+
+            <div class="row align-items-center">
+              <div class="col-6 text-center"> <!-- Logo -->
+                <img src="{% static 'assets/img/vg--img.jpg' %}" alt="" class="img-fluid company-img">
+              </div>
+              <div class="col-6 position-info">
+                <div>
+                  <b>Vaillant Group</b>
+                  <p>Technical Support & Project Engineer</p>
+                </div>
+                <div class="">
+                  <i>2016 - 2019</i>
+                  <p><em>Istanbul, Turkey</em></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <ul class="professional-description">
+                <li>Support the project manager while performing site visits for initial customer contact and site surveying. (80+ field visits annually for service centers, dealers, and commercial customers.)</li>
+                <li>Coordination and collaboration with project team members (Customer Services, Supply Chain Management, Sales & Marketing, Quality Management, suppliers, sub-contractors, etc.) to support dealers and after-sale services by drawing projects for related HVAC equipment and systems.</li>
+                <li>Cooperate with the sales team for direct customers and identify tender requirements and customer needs.</li>
+                <li>Defining and implementing technical training strategies for all internal and external customers. (1000+ staff of the dealer)</li>
+                <li>Providing technical support to all internal and external customers across the full product portfolio. (30+ large scaled HVAC project designs)</li>
+                <li>Managing the customer complaint process to ensure the provision of solutions for customer problems that could not be solved by the other departments, ensuring end-user complaints are resolved in a timely manner.</li>
+                <li>Providing support provided to After Sales Service and Complaint Management, to find technical solutions for end-user problems and ensure complaints are managed in a professional manner. (drawn 200+ drawings to create a database for basic solutions.)</li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- End Vaillant Group -->
+
+      <!-- 3bfab -->
+      <div class="mt-5 education-info d-flex flex-row">
+        <div class="row align-items-center justify-content-center">
+
+          <div class="col-12">
+
+            <div class="row align-items-center">
+              <div class="col-6 text-center"> <!-- Logo -->
+                <img src="{% static 'assets/img/3bfab--img.jpg' %}" alt="" class="img-fluid company-img">
+              </div>
+              <div class="col-6 position-info">
+                <div>
+                  <b>3bfab</b>
+                  <p>Technical Support Engineer</p>
+                </div>
+                <div class="">
+                  <i>2015 - 2016</i>
+                  <br>
+                  <em>Istanbul, Turkey</em>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <ul class="professional-description">
+                <li>
+                  Installed and configured 3D Printing & 3D Scanning machines for customers, ensuring optimal functionality and performance.
+                </li>
+                <li>
+                  Planned and scheduled Technical Support appointments efficiently through the SalesForce platform, ensuring prompt and effective assistance to customers.
+                </li>
+                <li>
+                  Monitored and tracked technical cases from customers received via email, telephone, or the sales team. Provided timely responses and solutions to address their technical issues.
+                </li>
+                <li>
+                  Delivered comprehensive technical support both on-site and within the company premises, ensuring that customers' technical needs were met.
+                </li>
+                <li>
+                  Provided expert technical assistance for after-sales and sales activities, especially during the initial installation phase for large-scale businesses, ensuring smooth implementation and customer satisfaction.
+                </li>
+                <li>
+                  Managed daily task assignments within the team, ensuring that responsibilities were distributed effectively and tasks were completed efficiently.
+                </li>
+                <li>
+                  Organized and conducted advanced training seminars for customers who purchased our devices, enhancing their understanding of our products and optimizing their usage.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <!-- End 3bfab -->
+    </div>
+  </section>
+  <!-- End Resume Section -->
+
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Portfolio</h2>
+        <p>
+          Projects that I developed for portfolio purpose.
+        </p>
+      </div>
+
+      <div class="portfolio-filter text-center">
+        <ul id="portfolio-flters">
+          <li data-filter="*" class="filter-active">All</li>
+          <li data-filter=".filter-pos">POS</li>
+          <li data-filter=".filter-cms">CMS</li>
+          <li data-filter=".filter-crm">CRM</li>
+          <li data-filter=".filter-lms">LMS</li>
+          <li data-filter=".filter-blog">BLOG</li>
+        </ul>
+      </div>
+
+      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+
+
+        <div class="col-lg-6 col-md-6 portfolio-item filter-cms">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets/img/portfolio/cms/cms-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p id="portfolio-title">Kaya Camp</p>
+              <div class="portfolio-links">
+                <a href="{% static 'cms-details.html' %}" class="portfolio-details-lightbox"
+                  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/kayahankaya/KayaCamp" title="Portfolio Github Link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 portfolio-item filter-pos">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets/img/portfolio/pos/pos-5.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p id="portfolio-title">Phil's Cafe</p>
+              <div class="portfolio-links">
+                <a href="{% static 'pos-details.html' %}" class="portfolio-details-lightbox"
+                  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/kayahankaya/RMS" title="Portfolio Github Link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 portfolio-item filter-crm">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets/img/portfolio/crm/crm-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p id="portfolio-title">DJ CRM</p>
+              <div class="portfolio-links">
+                <a href="{% static 'crm-details.html' %}" class="portfolio-details-lightbox"
+                  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/kayahankaya/djcrm" title="Portfolio Github Link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 portfolio-item filter-lms">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets/img/portfolio/lms/lms-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p id="portfolio-title">SmartEDU</p>
+              <div class="portfolio-links">
+                <a href="{% static 'lms-details.html' %}" class="portfolio-details-lightbox"
+                  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/kayahankaya/SmartEdu-Django" title="Portfolio Github Link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 portfolio-item filter-blog">
+          <div class="portfolio-wrap">
+            <img src="{% static 'assets/img/portfolio/blog/blog-1.jpg' %}" class="img-fluid" alt="">
+            <div class="portfolio-info">
+              <p id="portfolio-title">Kaya's Portfolio</p>
+              <div class="portfolio-links">
+                <a href="{% static 'blog-details.html' %}" class="portfolio-details-lightbox"
+                  data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
+                <a href="https://github.com/kayahankaya/kayaportfolio" title="Portfolio Github Link"><i
+                    class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+  <!-- ======= Contact Section ======= -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="row mt-1">
+
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Location:</h4>
+              <p>Eindhoven, the Netherlands</p>
+            </div>
+
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email:</h4>
+              <p>kayahankaya@icloud.com</p>
+            </div>
+
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Call:</h4>
+              <p>+31 629 218155</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-8 mt-5 mt-lg-0">
+
+          <form action="{% static 'forms/contact.php' %}" method="post" role="form" class="php-email-form">
+            <div class="row">
+              <div class="col-md-6 form-group mt-3">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="my-3">
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your message has been sent. Thank you!</div>
+            </div>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://github.com/kayahankaya" class="google-plus"><i class="bx bxl-github"></i></a>
+        <a href="https://www.linkedin.com/in/kayahankaya" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.instagram.com/kayahankaya/" class="instagram"><i class="bx bxl-instagram"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kaya</span></strong>. <br>All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: [license-url] -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.umd.js' %}"></script>
+  <script src="{% static 'assets/vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>

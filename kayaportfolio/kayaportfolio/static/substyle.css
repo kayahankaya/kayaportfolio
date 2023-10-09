@@ -1,0 +1,138 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+.blog-details {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #555;
+}
+
+.tech-stack {
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tech-stack h4 {
+    color: #333;
+}
+
+.gallery-image:hover {
+    cursor: pointer;
+    border: 2px solid #007bff;
+}
+
+.gallery-image {
+    transition: border 0.3s ease-in-out;
+}
+
+b {
+    font-size: 3vw; /* Başlık metin boyutunu küçült */
+}
+
+.main-image {
+    max-width: 45vw; /* Ana resmi ekran genişliğine sığdır */
+    height: auto; /* Otomatik yükseklik ayarı */
+}
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.detail-title {
+    text-align: center;
+}
+
+.detail-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #16507b;
+    color: white;
+    margin: 0; /* Ekstra boşluğu kaldır */
+}
+
+h5 {
+    color: #16507b;
+    
+}
+
+h6 {
+    color: #16507b;
+}
+
+.gitlogo {
+    max-width: 100%; /* Ana resmi ekran genişliğine sığdır */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Yatay ortala */
+    align-items: center; /* Dikey ortala */
+    margin: 0 auto; /* İstenen her iki yönde de ortala */
+    color: #2487ce;
+}
+
+.carousel-image {
+    max-width: 100%;
+    max-height: 600px; /* Ana resmin sabit yüksekliği */
+    object-fit: cover; /* Resimleri boyutlarına sığdır */
+  }
+
+
+@media (max-width: 768px) {
+    b {
+        font-size: 6vw; /* Başlık metin boyutunu küçült */
+    }
+
+    h5 {
+        font-size: 5vw; /* Başlık metin boyutunu küçült */
+    }
+
+    h6 {
+        font-size: 4.5vw; /* Başlık metin boyutunu küçült */
+    }
+
+    p {
+        margin-top: 3vw; /* Başlık metin boyutunu küçült */
+        font-size: 4vw; /* Başlık metin boyutunu küçült */
+    }
+
+    .gallery-image {
+        max-width: 100%; /* Ana resmi ekran genişliğine sığdır */
+    }
+    .gitlogo {
+        max-width: 60%; /* Ana resmi ekran genişliğine sığdır */
+        text-align: center;
+        display: flex;
+        justify-content: center; /* Yatay ortala */
+        align-items: center; /* Dikey ortala */
+        margin: 0 auto; /* İstenen her iki yönde de ortala */
+        color: #2487ce;
+    }
+
+    .gitlogo::before {
+        content: "";
+        width: 100%;
+        height: 2px; /* Çizgi kalınlığı */
+        background-color: #007bff; /* Çizgi rengi */
+        position: absolute; /* Pozisyonu ayarla */
+        bottom: 0; /* En alta yerleştir */
+        left: 0; /* Sola hizala */
+    }
+
+    .detail-title h2 {
+        font-size: 5vw;
+        font-weight: bold;
+        text-transform: uppercase;
+        background-color: #16507b;
+        color: white;
+        margin: 0; /* Ekstra boşluğu kaldır */
+    }
+    }
+
