@@ -8,6 +8,5 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls, name="admin"),
     path('', views.landingpage_view, name="landingpage_view"),
-    path('pos-details/', views.pos_details_view, name="pos_details_view"),
 ]
 
