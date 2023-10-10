@@ -1105,6 +1105,7 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+  text-align: center;
 }
 
 .contact .info i {
@@ -1227,9 +1228,6 @@ section {
   background: #0678e3;
 }
 
-.contact-frame {
-  text-align: center;
-}
 
 @keyframes animate-loading {
   0% {
