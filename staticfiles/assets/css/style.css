@@ -1108,6 +1108,24 @@ section {
   text-align: center;
 }
 
+.contact .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact .info i {
   font-size: 20px;
   color: #0563bb;
