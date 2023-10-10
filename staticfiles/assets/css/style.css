@@ -1105,31 +1105,11 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
-  text-align: center;
-}
-
-.contact .address {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact .email {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact .phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .contact .info i {
   font-size: 20px;
   color: #0563bb;
-  float: left;
   width: 44px;
   height: 44px;
   background: #eef7ff;
@@ -1146,6 +1126,7 @@ section {
   font-weight: 600;
   margin-bottom: 5px;
   color: #45505b;
+  
 }
 
 .contact .info p {
@@ -1153,11 +1134,6 @@ section {
   margin-bottom: 0;
   font-size: 14px;
   color: #728394;
-}
-
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
 }
 
 .contact .info .email:hover i,
@@ -1382,6 +1358,11 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .contact .info .email,
+  .contact .info .phone {
+  margin-top: 40px;
   }
 }
 
