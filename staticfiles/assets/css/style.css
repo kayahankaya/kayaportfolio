@@ -1227,6 +1227,10 @@ section {
   background: #0678e3;
 }
 
+.section-title {
+  text-align: center;
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
