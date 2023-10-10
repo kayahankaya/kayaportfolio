@@ -119,8 +119,6 @@ h6 {
     .gitlogo::before {
         content: "";
         width: 100%;
-        height: 2px; /* Çizgi kalınlığı */
-        background-color: #007bff; /* Çizgi rengi */
         position: absolute; /* Pozisyonu ayarla */
         bottom: 0; /* En alta yerleştir */
         left: 0; /* Sola hizala */
