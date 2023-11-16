@@ -1,1 +1,22 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Döviz Kurları</title>
+<link rel="stylesheet" href="styles.css">
+<link href="{% static 'assets/css/samplestyle.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<div class="currency-container">
+  <!-- Her para birimi için bir div oluşturulacak -->
+  <div class="currency" style="flex: 4;"> <!-- flex değeri, dolar üzerindeki yüzdeyi temsil eder -->
+    <span class="currency-value">0.04 USD</span>
+    <img src="{% static 'assets/img/Flag_of_Turkey.svg' %}" alt="Türkiye Bayrağı" class="flag">
+  </div>
+  <!-- Daha fazla para birimi ekleyebilirsiniz -->
+</div>
+
+</body>
+</html>

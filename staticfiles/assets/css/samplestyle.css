@@ -1,0 +1,37 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .currency-container {
+    display: flex;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/23/US_one_dollar_bill%2C_obverse%2C_series_2009.jpg'); /* Burada dolar görselinizi arkaplan olarak kullanın */
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  
+  .currency {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+  }
+  
+  .currency-value {
+    font-size: 1.5em;
+    z-index: 2;
+  }
+  
+  .flag {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+  }
+  
